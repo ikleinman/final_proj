@@ -1,22 +1,23 @@
 .jumbotron {
-    color: darkred;
-    background: url('Screen Shot 2018-10-27 at 11.35.08 AM.png');
-    background-size: contain;
+    color: darkcyan;
+    background-image: url('https://wallpaperstream.com/wallpapers/full/moon-hd/Moon-Stars-and-Wolf-Tree-Silhouette-View.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card-title{
-    color:darkred;
+    color:darkcyan;
 }
 
 .card-subtitle{
-    color:darkorange;
+    color:darkblue;
 }
 
 h1{
-    background-color: antiquewhite;
-    opacity: 0.8;
+    background-color: whitesmoke;
+    opacity: 0.6;
 }
-table, th, td{
-  border: 1px solid black;
-  padding: 15px;
+
+.container{
+    background-color: whitesmoke;
 }
