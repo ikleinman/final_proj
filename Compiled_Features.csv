@@ -1,0 +1,49 @@
+Category,Code,Description
+CF,DPQ050,"[Over the last 2 weeks, how often have you been bothered by the following problems:] poor appetite or overeating?"
+CF,DPQ060,"[Over the last 2 weeks, how often have you been bothered by the following problems:] feeling bad about yourself - or that you are a failure or have let yourself or your family down?"
+CF,DPQ070,"[Over the last 2 weeks, how often have you been bothered by the following problems:] trouble concentrating on things, such as reading the newspaper or watching TV?"
+CF,DPQ080,"[Over the last 2 weeks, how often have you been bothered by the following problems:] moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?"
+CF,DPQ090,"Over the last 2 weeks, how often have you been bothered by the following problems: Thoughts that you would be better off dead or of hurting yourself in some way?"
+CF,DPQ020,"[Over the last 2 weeks, how often have you been bothered by the following problems:] feeling down, depressed, or hopeless?"
+CF,DPQ010,"Over the last 2 weeks, how often have you been bothered by the following problems: little interest or pleasure in doing things? Would you say..."
+DA,ALD030,"During the past 30 days, on how many days did you have at least one drink of alcohol?"
+DA,SMD460,"Now I would like to ask you a few questions about smoking in this home. How many people who live here smoke cigarettes, cigars, little cigars, pipes, water pipes, hookah, or any other tobacco product?"
+DA,DUQ211,Have you ever smoked marijuana or hashish at least once a month for more than one year?
+DA,DUQ240,"Have you ever used cocaine, crack cocaine, heroin, or methamphetamine?"
+DA,SMQ040,{Do you/Does SP} now smoke cigarettes?
+DE,DRQSDT1,What kind of diet are you on? (Is it a weight loss or low calorie diet: low fat or cholesterol diet; low salt or sodium diet; sugar free or low sugar diet; low fiber diet; high fiber diet; diabetic diet; or another type of diet?)
+DE,BMXWT,Weight (kg)
+DE,DRQSDIET,"Are you currently on any kind of diet, either to lose weight or for some other health-related reason?"
+DE,BMXBMI,Body Mass Index (kg/m**2)
+DE,PAD645,How much time {do you/does SP} spend walking or bicycling for travel on a typical day?
+DE,PAQ655,"In a typical week, on how many days {do you/does SP} do vigorous-intensity sports, fitness or recreational activities?"
+DE,PAD660,"How much time {do you/does SP} spend doing vigorous-intensity sports, fitness or recreational activities on a typical day?"
+DE,PAQ665,"In a typical week {do you/does SP} do any moderate-intensity sports, fitness, or recreational activities that cause a small increase in breathing or heart rate such as brisk walking, bicycling, swimming, or volleyball for at least 10 minutes continuously?"
+Dem,RIAGENDR,Gender of the participant.
+Dem,RIDAGEYR,Age in years of the participant at the time of screening. Individuals 80 and over are topcoded at 80 years of age.
+Dem,RIDRETH1,Recode of reported race and Hispanic origin information
+Dem,DMDEDUC3,What is the highest grade or level of school {you have/SP has} completed or the highest degree {you have/s/he has} received?
+Dem,DMDMARTL,Marital status
+Dem,DMDHHSIZ,Total number of people in the Household
+Dem,OCQ180,How many hours did {you/SP} work last week at all jobs or businesses?
+Dem,RIDEXPRG,Pregnancy status for females between 20 and 44 years of age at the time of MEC exam.
+Dem,HIQ011,The (first/next) questions are about health insurance. {Are you/Is SP} covered by health insurance or some other kind of health care plan? [Include health insurance obtained through employment or purchased directly as well as government programs like Medicare and Medicaid that provide medical care or help pay medical bills.]
+Dem,OCD270,About how long {have you/has SP} worked for {EMPLOYER} as a(n) {OCCUPATION}?
+Fi,CBD120,"During the past 30 days, how much money {did your family/did you} spend on eating out? Please include money spent in cafeterias at work or at school or on vending machines, for all family members."
+Fi,CBD130,"During the past 30 days, how much money {did your family/did you} spend on food carried out or delivered? Please do not include money you have already told me about."
+Fi,HIQ031A,{Are you/Is SP} covered by private insurance?
+Fi,HIQ031B,{Are you/Is SP} covered by Medicare?
+Fi,HIQ031D,{Are you/Is SP} covered by Medicaid?
+Fi,HIQ031F,{Are you/Is SP} covered by military health plan (Tricare/VA/Champ-VA)?
+Fi,HIQ031G,{Are you/Is SP} covered by Indian Health Service?
+Fi,HIQ031H,{Are you/Is SP} covered by state-sponsored health plan?
+Fi,HIQ031I,{Are you/Is SP} covered by other government insurance?
+Fi,INDHHIN2,Total household income (reported as a range value in dollars)
+Fi,INDFMPIR,A ratio of family income to poverty guidelines.
+Fi,FSQ012,"In the last 12 months, did {you/you or any member of your household} receive SNAP or Food Stamp benefits?"
+Fi,FSQ162,"In the last 12 months, did {you/you or any member of your household} receive benefits from the WIC program, that is, the Women, Infants and Children program?"
+KC,SEQN,Respondent sequence number.
+KI,DPQ030,"[Over the last 2 weeks, how often have you been bothered by the following problems:] trouble falling or staying asleep, or sleeping too much?"
+KI,DPQ040,"[Over the last 2 weeks, how often have you been bothered by the following problems:] feeling tired or having little energy?"
+KI,SLD010H,The next set of questions is about your sleeping habits. How much sleep {do you/does SP} usually get at night on weekdays or workdays?
+Target,SLQ050,{Have you/Has SP} ever told a doctor or other health professional that {you have/s/he has} trouble sleeping?
