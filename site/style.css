@@ -1,8 +1,16 @@
+body{
+  background-color: white;
+}
+
 .jumbotron {
     color: darkcyan;
     background-image: url('https://wallpaperstream.com/wallpapers/full/moon-hd/Moon-Stars-and-Wolf-Tree-Silhouette-View.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: whitesmoke;
+  opacity: 0.6;
+  font-size: 36pt;
+  font-weight: bold;
 }
 
 .card-title{
@@ -22,11 +30,20 @@ h1{
     background-color: whitesmoke;
 }
 
+.col-lg-4{
+  padding-left: 48px;
+}
+
+#button{
+  padding-left: 16px;
+}
+
 /* Navbar container */
 .navbar {
     background-color:darkcyan;
     font-family: Arial;
   }
+
 
   /*---------------*/
   /* Links inside the navbar */
@@ -40,23 +57,18 @@ h1{
   }
   
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbar a:hover {
     background-color: lightgray;
     color: darkcyan;
   }
  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: lightgrey;
-  }
-  
   /*Highlight current page*/
   a.active{
     background-color: whitesmoke;
     color: darkcyan;
+    font-weight: bold;
   }
 
-  .dropbtn.active{
-    background-color: whitesmoke;
-    color: darkcyan;
+  .navbar{
+    padding-right: 140px;
   }

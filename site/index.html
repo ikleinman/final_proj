@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Thanksgiving Potluck</title>
+    <title>Sleep Questionnaire</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
     <script src="data.js"></script>
-
 </head>
 
 <body>
     <div class="navbar">
+            <a href="data.html">Data</a>
         <a class="active" href="index.html">Questionnaire</a>
-        <a href="data.html">Data</a>
       </div>
     
     <div class="container">
         <div class="jumbotron text-center">
-            <h1>PAGE TITLE</h1>
+            PAGE TITLE
         </div>
 
         <div class="row" id="mars-news">
@@ -31,23 +30,78 @@
                     <div class="card-body">
                         <h2 class="card-title">Lifestyle Questionnaire</h2>
                       <h4 class="card-title">Complete the form below to support our analysis.</h4>
+                    </div>
+                </div>
+          </div>
+          <div class="row" >
+                <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body" id="questionnaire">
                       <h5 class="card-subtitle">Gender:</h5>
                       <form>
                         <input type="radio" name="category" value="Male" checked> Male<br>
                         <input type="radio" name="category" value="Female"> Female<br>
-                        </form>
+                        </form><br>
                         <h5 class="card-subtitle">Age:</h5>
+                      <input id="nameField" type="number" name = "age"><br><br>
+                      <h5 class="card-subtitle">Weight: (in lbs.)</h5>
                       <input id="nameField" type="number" name = "age"><br>
-                      <h5 class="card-subtitle">Tobacco Usage (incl. cigarettes, cigars):</h5>
-                      <form>
-                        <input type="radio" name="category" value="Smoker" checked> Smoker<br>
-                        <input type="radio" name="category" value="Non-Smoker"> Non-Smoker<br>
-                        </form>
-                      <br>
-                      <p><a class="btn btn-primary btn-lg" id="btnSend" type="submit">Click me to enter your info!</a></p>
+                      <br></div>
+                    </div></div>
+                
+                      <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body" id="questionnaire">
+                          
+                          <h5 class="card-subtitle">Tobacco Usage (incl. cigarettes, cigars):</h5>
+                          <form>
+                            <input type="radio" name="category" value="Smoker" checked> Smoker<br>
+                            <input type="radio" name="category" value="Non-Smoker"> Non-Smoker<br>
+                            </form><br>
+                            <h5 class="card-subtitle">Gender:</h5>
+                          <form>
+                            <input type="radio" name="category" value="Male" checked> Male<br>
+                            <input type="radio" name="category" value="Female"> Female<br>
+                            </form><br>
+                            <h5 class="card-subtitle">Age:</h5>
+                          <input id="nameField" type="number" name = "age"><br>
+                          <br>  </div>
+                        </div>
+                  </div>  
+                  
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body" id="questionnaire">
+                                        <h5 class="card-subtitle">Tobacco Usage (incl. cigarettes, cigars):</h5>
+                                        <form>
+                                          <input type="radio" name="category" value="Smoker" checked> Smoker<br>
+                                          <input type="radio" name="category" value="Non-Smoker"> Non-Smoker<br>
+                                          </form><br>
+                                          <h5 class="card-subtitle">Gender:</h5>
+                                        <form>
+                                          <input type="radio" name="category" value="Male" checked> Male<br>
+                                          <input type="radio" name="category" value="Female"> Female<br>
+                                          </form><br>
+                                          <h5 class="card-subtitle">Age:</h5>
+                                        <input id="nameField" type="number" name = "age"><br>
+                                        <br> 
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                            <div class="row" >
+                                    <div class="col-lg-12">
+                                            <div class="card">
+                                            <div class="card-body" id="button">
+                                <a class="btn btn-primary btn-lg" id="btnSend" type="submit">Click me to enter your info!</a><br>
+                                <br>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                  
             </div>
           </div>
-
+        </div>
+    </div>
 </body>
