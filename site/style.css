@@ -21,3 +21,42 @@ h1{
 .container{
     background-color: whitesmoke;
 }
+
+/* Navbar container */
+.navbar {
+    background-color:darkcyan;
+    font-family: Arial;
+  }
+
+  /*---------------*/
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: lightgray;
+    color: darkcyan;
+  }
+ 
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: lightgrey;
+  }
+  
+  /*Highlight current page*/
+  a.active{
+    background-color: whitesmoke;
+    color: darkcyan;
+  }
+
+  .dropbtn.active{
+    background-color: whitesmoke;
+    color: darkcyan;
+  }

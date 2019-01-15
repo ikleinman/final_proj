@@ -15,6 +15,11 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <a class="active" href="index.html">Questionnaire</a>
+        <a href="data.html">Data</a>
+      </div>
+    
     <div class="container">
         <div class="jumbotron text-center">
             <h1>PAGE TITLE</h1>
@@ -26,18 +31,19 @@
                     <div class="card-body">
                         <h2 class="card-title">Lifestyle Questionnaire</h2>
                       <h4 class="card-title">Complete the form below to support our analysis.</h4>
-                      <h5 class="card-subtitle">Name</h5>
-                      <input id="nameField" type="text" name = "name"><br>
-                      <h5 class="card-subtitle">Category</h5>
+                      <h5 class="card-subtitle">Gender:</h5>
                       <form>
-                        <input type="radio" name="category" value="Appetizer" checked> Appetizer<br>
-                        <input type="radio" name="category" value="Side Dish"> Side Dish<br>
-                        <input type="radio" name="category" value="Dessert"> Dessert<br>
-                        <input type="radio" name="category" value="Beverages"> Beverages<br>
-                        <input type="radio" name="category" value="Paper Products"> Plates/Silverware/Napkins/Cups<br>
-                      </form>
-                      <h5 class="card-subtitle">Description</h5>
-                      <input id="descField" type="text" name = "desc"><br><br>
+                        <input type="radio" name="category" value="Male" checked> Male<br>
+                        <input type="radio" name="category" value="Female"> Female<br>
+                        </form>
+                        <h5 class="card-subtitle">Age:</h5>
+                      <input id="nameField" type="number" name = "age"><br>
+                      <h5 class="card-subtitle">Tobacco Usage (incl. cigarettes, cigars):</h5>
+                      <form>
+                        <input type="radio" name="category" value="Smoker" checked> Smoker<br>
+                        <input type="radio" name="category" value="Non-Smoker"> Non-Smoker<br>
+                        </form>
+                      <br>
                       <p><a class="btn btn-primary btn-lg" id="btnSend" type="submit">Click me to enter your info!</a></p>
                     </div>
                   </div>
