@@ -29,15 +29,16 @@ client = pymongo.MongoClient(conn)
 # Connect to a database. Will create one if not already available.
 db = client.final_project_test
 
-# Set route
-@app.route('/')
-def index():
+# Set route to homepage
+@app.route("/")
+def home():
     # Store the entire team collection in a list
-    data = list(db.final_project_test.find())
-    print(data)
+    #data = list(db.final_project_test.find())
+    #print(data)
 
     # Return the template with the teams list passed in
-    return render_template('index.html', data=data)
+    return render_template('/Documents/GitHub/final_proj/site/index.html')
+
 
 
 
