@@ -8,9 +8,11 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-color: whitesmoke;
-  opacity: 0.6;
+  opacity: 0.8;
   font-size: 36pt;
   font-weight: bold;
+  text-shadow: -1px 0 navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
+
 }
 
 .card-title{
