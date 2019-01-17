@@ -14,8 +14,16 @@ body{
   text-shadow: -1px 0 navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
 
 }
+hr{
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid darkgray;
+    margin: 1em 0;
+    padding: 0; 
+}
 
-.card-title{
+.card-title, .section{
     color:darkcyan;
 }
 
