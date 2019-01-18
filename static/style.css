@@ -1,0 +1,94 @@
+body{
+  background-color: white;
+}
+
+.jumbotron {
+    color: darkcyan;
+    background-image: url('https://wallpaperstream.com/wallpapers/full/moon-hd/Moon-Stars-and-Wolf-Tree-Silhouette-View.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  font-size: 36pt;
+  font-weight: bold;
+  text-shadow: -1px 0 navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
+
+}
+hr{
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid darkgray;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.dash{
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed lightgray;
+    margin: 1em 0;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.card-title, .section{
+    color:darkcyan;
+}
+
+.card-subtitle{
+    color:darkblue;
+}
+
+h1{
+    background-color: whitesmoke;
+    opacity: 0.6;
+}
+
+.container{
+    background-color: whitesmoke;
+}
+
+.col-lg-4{
+  padding-left: 48px;
+}
+
+#button{
+  padding-left: 16px;
+}
+
+/* Navbar container */
+.navbar {
+    background-color:darkcyan;
+    font-family: Arial;
+  }
+
+
+  /*---------------*/
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover {
+    background-color: lightgray;
+    color: darkcyan;
+  }
+ 
+  /*Highlight current page*/
+  a.active{
+    background-color: whitesmoke;
+    color: darkcyan;
+    font-weight: bold;
+  }
+
+  .navbar{
+    padding-right: 140px;
+  }
