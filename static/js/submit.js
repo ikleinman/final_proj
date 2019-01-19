@@ -10,16 +10,20 @@ $.ajax({
     contentType: 'application/json',
     data: JSON.stringify(form),
     processData: false,
-    success: function(response){
+    success: function (data) {
+           var tmp = data;
+           console.log(tmp);
+           //return tmp;
+    //success: function(response){
         //$.each(response, function(i, response){
           //$orders.append('<li>data</li>');
 
         //});
-        cosnole.log(repsonse);
-    }
-    //error: function( jqXhr, textStatus, errorThrown ){
+        //cosnole.log(repsonse);
 
-        //return( errorThrown );
+
+  }
+   });
 
 });
-});
+//});
