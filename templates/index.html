@@ -41,10 +41,18 @@
                       <h3 class="section">Demographics</h3>
                                 <h5 class="card-subtitle">Gender:</h5>
                                 <select name="gender">
+                                    <option value="0"></option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
                                 </select>
-                      <br>
+                      <br><br>
+                      <h5 class="card-subtitle">Race/Ethnic Origin:</h5>
+                                <select name="race">
+                                    <option value="0"></option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                      <br><br>
                       <br></div>
                     </div></div>
                 
@@ -76,8 +84,27 @@
                                 <div class="card">
                                     <div class="card-body" id="questionnaire">
                                         <h3 class="section">Sleep Habits</h3>
-                              <h5 class="card-subtitle">Tobacco Usage (incl. cigarettes, cigars):</h5>
-                              <br>
+                                        <h5 class="card-subtitle">Over the last 2 weeks, how often have you had trouble falling asleep or staying asleep, or sleeping too much?</h5>
+                                        <select name="sleep_act">
+                                            <option value="0"></option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                              <br><br>
+                              <h5 class="card-subtitle">Over the last 2 weeks, how often have you been bothered by feeling tired of having little energy?</h5>
+                                        <select name="energy">
+                                            <option value="0"></option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                              <br><br>
+                              <h5 class="card-subtitle">How much sleep do you usually get at night on weekdays/workdays?</h5>
+                                        <select name="sleep_hrs">
+                                            <option value="0"></option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                              <br><br><br>
                                 </div>
                             </div>
                       </div>
@@ -86,7 +113,41 @@
                             <div class="card">
                                 <div class="card-body" id="questionnaire">
                                     <h3 class="section">Financial Status</h3>
-                          <h5 class="card-subtitle">Tobacco Usage (incl. cigarettes, cigars):</h5>
+                                    <h5 class="card-subtitle">During the past 30 days, how much money {did your family/did you} spend on food carried out or delivered?</h5>
+                                    <select name="food_spend">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
+                                    <h5 class="card-subtitle">In the last 12 months, did you or a member of your household receive benefits from WIC (Women, Infants and Children Program)?</h5>
+                                    <select name="wic">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
+                          <h5 class="card-subtitle">Are you covered by private insurance?</h5>
+                                    <select name="private_ins">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
+                          <h5 class="card-subtitle">Are you covered by Medicare?</h5>
+                                    <select name="medicare">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
+                          <h5 class="card-subtitle">Are you covered by other government insurance?</h5>
+                                    <select name="govt_ins">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
                           <br>
                             </div>
                         </div>
@@ -96,7 +157,48 @@
                                 <div class="card">
                                     <div class="card-body" id="questionnaire">
                                         <h3 class="section">Social-Emotional</h3>
-                              <h5 class="card-subtitle">Tobacco Usage (incl. cigarettes, cigars):</h5>
+                                        <h5 class="card-subtitle">Over the last 2 weeks, how often have you been bothered by poor appetite or overeating?</h5>
+                                        <select name="eating">
+                                            <option value="0"></option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                              <br><br>
+                              <h5 class="card-subtitle">Over the last 2 weeks, how often have you felt bad about yourself or that you're a failure or let people down?</h5>
+                                    <select name="failure">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br>
+                          <h5 class="card-subtitle">Over the last 2 weeks, how often have you had trouble concentrating on things, such as reading or watching TV?</h5>
+                                    <select name="concentrate">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
+                          <h5 class="card-subtitle">Over the last 2 weeks, how often have experienced slow movement or speaking, or unusually restless or fidgety movement?</h5>
+                                    <select name="mvmt">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
+                          <h5 class="card-subtitle">Over the last 2 weeks, how often have you felt down, depressed or hopeless?</h5>
+                                    <select name="depression">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
+                          <h5 class="card-subtitle">Over the last 2 weeks, how often have you been had little interest or pleasure in doing things?</h5>
+                                    <select name="interest">
+                                        <option value="0"></option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                          <br><br>
                               <br>
                                 </div>
                             </div>

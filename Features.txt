@@ -3,106 +3,49 @@ CBD130
 During the past 30 days, how much money {did your family/did you} spend on food carried out or delivered? Please do not include money you have already told me about.
 
 
-
-
-
-
-
-
-
-CF
+SE
 DPQ050
 [Over the last 2 weeks, how often have you been bothered by the following problems:] poor appetite or overeating?
 
 
-
-
-
-
-
-
-
-CF
+SE
 DPQ060
 [Over the last 2 weeks, how often have you been bothered by the following problems:] feeling bad about yourself - or that you are a failure or have let yourself or your family down?
 
 
-
-
-
-
-
-
-
-CF
+SE
 DPQ070
 [Over the last 2 weeks, how often have you been bothered by the following problems:] trouble concentrating on things, such as reading the newspaper or watching TV?
 
 
-
-
-
-
-
-
-
-CF
+SE
 DPQ080
 [Over the last 2 weeks, how often have you been bothered by the following problems:] moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?
 
 
-
-
-
-
-
-
-
-CF
+SE
 DPQ020
 [Over the last 2 weeks, how often have you been bothered by the following problems:] feeling down, depressed, or hopeless?
 
 
-
-
-
-
-
-
-
-CF
+SE
 DPQ010
 Over the last 2 weeks, how often have you been bothered by the following problems: little interest or pleasure in doing things? Would you say...
 
 
-
-
-
-
-
-
-
-KI
+SH
 DPQ030
 [Over the last 2 weeks, how often have you been bothered by the following problems:] trouble falling or staying asleep, or sleeping too much?
 
-
-
-
-
-
-KI
+SH
 DPQ040
 [Over the last 2 weeks, how often have you been bothered by the following problems:] feeling tired or having little energy?
-
-
-
-
 
 
 Fi
 FSQ162
 In the last 12 months, did {you/you or any member of your household} receive benefits from the WIC program, that is, the Women, Infants and Children program?
+
 Fi
 HIQ031A
 {Are you/Is SP} covered by private insurance?
@@ -116,13 +59,15 @@ HIQ031B
 Fi
 HIQ031I
 {Are you/Is SP} covered by other government insurance?
-KI
+
+SH
 SLD010H
 The next set of questions is about your sleeping habits. How much sleep {do you/does SP} usually get at night on weekdays or workdays?
 
-Dem	RIDRETH1	Recode of reported race and Hispanic origin information
 Dem
+RIDRETH1	Recode of reported race and Hispanic origin information
 
+Dem
 RIAGENDR
 Gender of the participant.
 
