@@ -20,10 +20,16 @@ def home():
     #data = model.data()
     return render_template("index.html") #prediction=prediction)
 
-@app.route("/submit")
+@app.route("/submit", methods = ['POST'])
 def submit():
+    jsondata = request.get_json()
+    data = json.loads(jsondata)
 
-    return tmp("/", code=302)
+    #stuff happens here that involves data to obtain a result
+
+    result = {'escalate': True}
+    return json.dumps(result)
+    #return tmp("/", code=302)
 
 if __name__ == '__main__':
     app.run(debug=True)
