@@ -20,7 +20,7 @@ def home():
     #data = model.data()
     return render_template("index.html") #prediction=prediction)
 
-@app.route("/submit", methods = ['POST'])
+@app.route("/submit", methods = ['GET'])
 def submit():
     jsondata = request.get_json()
     data = json.loads(jsondata)
