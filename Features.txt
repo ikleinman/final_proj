@@ -18,10 +18,6 @@ DPQ070
 [Over the last 2 weeks, how often have you been bothered by the following problems:] trouble concentrating on things, such as reading the newspaper or watching TV?
 
 
-SE
-DPQ080
-[Over the last 2 weeks, how often have you been bothered by the following problems:] moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?
-
 
 SE
 DPQ020
