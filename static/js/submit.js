@@ -6,10 +6,10 @@ var $response = $('#response')
 $.ajax({
     type: 'GET',
     url: '/submit',
+    data: JSON.stringify(form),
     dataType: 'JSON',
     contentType: 'application/json',
-    data: JSON.stringify(form),
-    processData: false,
+    processData: true,
     success: function (data) {
            var tmp = data;
            console.log(tmp);
