@@ -12,7 +12,7 @@ body{
   font-size: 36pt;
   font-weight: bold;
   text-shadow: -1px 0 navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
-
+  font-family: 'Trebuchet MS';
 }
 hr{
   display: block;
@@ -35,10 +35,12 @@ hr{
 
 .card-title, .section{
     color:darkcyan;
+    font-family: 'Trebuchet MS';
 }
 
 .card-subtitle{
     color:darkblue;
+    font-family: 'Trebuchet MS';
 }
 
 h1{
@@ -48,21 +50,24 @@ h1{
 
 .container{
     background-color: whitesmoke;
+    font-family: 'Trebuchet MS';
 }
 
 .col-lg-6{
   padding-left: 48px;
   padding-right: 48px;
+  font-family: 'Trebuchet MS';
 }
 
 #button{
   padding-left: 16px;
+  font-family: 'Trebuchet MS';
 }
 
 /* Navbar container */
 .navbar {
     background-color:darkcyan;
-    font-family: Arial;
+    font-family: 'Trebuchet MS';
   }
 
 
