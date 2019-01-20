@@ -5,7 +5,7 @@ var form = $('form').serializeArray()
 var $response = $('#response')
 $.ajax({
     type: 'GET',
-    url: 'http://127.0.0.1:5000/submit',
+    url: '/submit',
     dataType: 'JSON',
     contentType: 'application/json',
     data: JSON.stringify(form),
