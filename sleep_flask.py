@@ -45,20 +45,29 @@ def predict():
         for key in d:
             if key == 'value':
                 array.append(d['value'])
+
     print(type(user_data))
     print(user_data)
     print(array)
-    # prediction = model.predict(user_submission)
+    encoder.fit(array)
+    new_array = encoder.transform(array)
+    print(new_array)
+    # array = map(int, array)
+    # new_array = np.array(new_array)
+    # new_array = [new_array]
+    new_array = new_array.reshape(1, -1)
+    print(new_array)
+    prediction = model.predict(new_array)
+    print(prediction)
     # res = dict()
     # for value in user_submission.value():
     #     res[value] = 
     # array = np.array(user_submission['value'])
         # except ValueError:
         #     return jsonify("Please try again.")
-    #print(user_data)
-    #print(jsonify(user_data))
-    return (jsonify(user_data))
+    return user_submission
 
 if __name__ == '__main__':
+    encoder = pickle.load(open('original_csv_files/Encoder.sav', 'rb'))
     model = pickle.load(open('original_csv_files/LogRegression.sav', 'rb'))
     app.run(debug=True)
