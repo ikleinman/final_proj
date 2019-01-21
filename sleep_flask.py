@@ -59,13 +59,14 @@ def predict():
     print(new_array)
     prediction = model.predict(new_array)
     print(prediction)
+    print(prediction[0])
     # res = dict()
     # for value in user_submission.value():
     #     res[value] =
     # array = np.array(user_submission['value'])
         # except ValueError:
         #     return jsonify("Please try again.")
-    return user_submission
+    return str(prediction[0])
 
 if __name__ == '__main__':
     encoder = pickle.load(open('original_csv_files/Encoder.sav', 'rb'))
