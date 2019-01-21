@@ -60,13 +60,16 @@ def predict():
     prediction = model.predict(new_array)
     print(prediction)
     print(prediction[0])
+    data = {"prediction": str(prediction[0])}
+    print(data)
     # res = dict()
     # for value in user_submission.value():
     #     res[value] =
     # array = np.array(user_submission['value'])
         # except ValueError:
         #     return jsonify("Please try again.")
-    return str(prediction[0])
+    # return jsonify(data)
+    return render_template("index.html", data=data)
 
 if __name__ == '__main__':
     encoder = pickle.load(open('original_csv_files/Encoder.sav', 'rb'))

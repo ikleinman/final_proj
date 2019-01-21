@@ -58,13 +58,13 @@ function selectResult(){
             x.style.display = "none";
         }
     };
-    myFunctionNo();
-    myFunctionYes();
-    // if (prediction[0] == 1){
-    //     myFunctionYes();
-    // } else {
-    //     myFunctionNo();
-    // }
+    // myFunctionNo();
+    // myFunctionYes();
+    if (prediction == '1'){
+        myFunctionYes();
+    } else {
+        myFunctionNo();
+    }
 }
 
 // function myFunctionYes(){
