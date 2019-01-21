@@ -14,7 +14,7 @@ def data_load():
 
     return render_template("data.html")
 
-# Connect to a database. Will create one if not already available.
+
 
 # Set route to homepage
 @app.route("/")
@@ -61,7 +61,7 @@ def predict():
     print(prediction)
     # res = dict()
     # for value in user_submission.value():
-    #     res[value] = 
+    #     res[value] =
     # array = np.array(user_submission['value'])
         # except ValueError:
         #     return jsonify("Please try again.")
