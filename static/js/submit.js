@@ -10,8 +10,10 @@ $('#btnSend').click(function(event){
       contentType: 'application/json',
       processData: true,
       success: function (response) {
-          $('#form').val(response)
-          console.log(user_submission)
+        console.log(response)  
+        $('#form').val(response)
+
+        //   console.log(user_submission)
   }
    });
 
