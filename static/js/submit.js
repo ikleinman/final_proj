@@ -60,7 +60,7 @@ function selectResult(){
     };
     // myFunctionNo();
     // myFunctionYes();
-    if (prediction == '1'){
+    if (prediction == '0'){
         myFunctionYes();
     } else {
         myFunctionNo();
