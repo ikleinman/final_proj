@@ -51,6 +51,7 @@ function selectResult(){
     
     function myFunctionNo(){
         event.preventDefault()
+        console.log(prediction);
         var x = document.getElementById("results_no");
         if (x.style.display === "none") {
             x.style.display = "inline";
