@@ -12,32 +12,31 @@
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body>
     <div class="navbar">
-            <a href="/data">Data</a>
+        <a href="/data">Data</a>
         <a class="active" href="/">Questionnaire </a>
-      </div>
+    </div>
 
     <div class="container">
         <div class="jumbotron text-center">
-            How does your lifestyle affect your sleep?
+        How does your lifestyle affect your sleep?
         </div>
 
         <div class="row" id="mars-news">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title">Lifestyle Questionnaire*</h2>
-                      <h4 class="card-title">Complete the form below to support our analysis.</h4>
-                      <h6 class="card-title">* This tool has not been scientifically proven and should not be used as a diagnostic tool.</h6>
+                    <h2 class="card-title">Lifestyle Questionnaire*</h2>
+                    <h4 class="card-title">Complete the form below to support our analysis.</h4>
+                    <h6 class="card-title">* This tool has not been scientifically proven and should not be used as a diagnostic tool.</h6>
                     <hr>
                     </div>
                 </div>
           </div>
+          
           <form id="form" action="{/response}" method="post">
           <div class="row" >
                 <div class="col-lg-6">
@@ -60,9 +59,10 @@
                                     <option value="4">Non-Hispanic Black</option>
                                     <option value="5">Other (including Multi-Racial)</option>
                                 </select>
-                      <br><br>
-                      <br></div>
-                    </div></div>
+                                <br><br><br>
+                            </div>
+                        </div>
+                </div>
 
 
                         <div class="col-lg-6">
@@ -96,160 +96,157 @@
                                             <option value="10+">10+ hours</option>
                                         </select>
                               <br><br><br>
+                                    </div>
                                 </div>
-                            </div>
-                        </div></div>
+                        </div>
+            </div>
 
-                            <hr class="dash">
-                            <div class="row" >
+            <hr class="dash">
+            <div class="row" >
 
-                      <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body" id="questionnaire">
-                                    <h3 class="section">Financial Status</h3>
-                                    <h5 class="card-subtitle">During the past 30 days, how much money {did your family/did you} spend on food carried out or delivered?</h5>
-                                    <select name="food_spend">
-                                        <option value="0"></option>
-                                        <option value="0-257">$0 - $257</option>
-                                        <option value="258-514">$258 - $514</option>
-                                        <option value="515-771">$515 - $771</option>
-                                        <option value="772-1028">$772 - $1,028</option>
-                                    </select>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" id="questionnaire">
+                            <h3 class="section">Financial Status</h3>
+                            <h5 class="card-subtitle">During the past 30 days, how much money {did your family/did you} spend on food carried out or delivered?</h5>
+                            <select name="food_spend">
+                                <option value="0"></option>
+                                <option value="0-257">$0 - $257</option>
+                                <option value="258-514">$258 - $514</option>
+                                <option value="515-771">$515 - $771</option>
+                                <option value="772-1028">$772 - $1,028</option>
+                            </select>
                           <br><br>
-                                    <h5 class="card-subtitle">In the last 12 months, did you or a member of your household receive benefits from WIC (Women, Infants and Children Program)?</h5>
-                                    <select name="wic">
-                                        <option value="0"></option>
-                                        <option value="1">Yes</option>
-                                        <option value="2">No</option>
-                                    </select>
+                            <h5 class="card-subtitle">In the last 12 months, did you or a member of your household receive benefits from WIC (Women, Infants and Children Program)?</h5>
+                            <select name="wic">
+                                <option value="0"></option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
                           <br><br>
                           <h5 class="card-subtitle">Are you covered by private insurance?</h5>
-                                    <select name="private_ins">
-                                        <option value="0"></option>
-                                        <option value="13">Yes</option>
-                                        <option value="0">No</option>
-                                    </select>
+                            <select name="private_ins">
+                                <option value="0"></option>
+                                <option value="13">Yes</option>
+                                <option value="0">No</option>
+                            </select>
                           <br><br>
                           <h5 class="card-subtitle">Are you covered by Medicare?</h5>
-                                    <select name="medicare">
-                                        <option value="0"></option>
-                                        <option value="15">Yes</option>
-                                        <option value="0">No</option>
-                                    </select>
+                            <select name="medicare">
+                                <option value="0"></option>
+                                <option value="15">Yes</option>
+                                <option value="0">No</option>
+                            </select>
                           <br><br>
                           <h5 class="card-subtitle">Are you covered by other government insurance?</h5>
-                                    <select name="govt_ins">
-                                        <option value="0"></option>
-                                        <option value="22">Yes</option>
-                                        <option value="0">No</option>
-                                    </select>
-                          <br><br>
-                          <br>
-                            </div>
+                            <select name="govt_ins">
+                                <option value="0"></option>
+                                <option value="22">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                          <br><br><br>
                         </div>
-                  </div>
+                    </div>
+                </div>
 
-                        <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body" id="questionnaire">
-                                        <h3 class="section">Social-Emotional</h3>
-                                        <h5 class="card-subtitle">Over the last 2 weeks, how often have you been bothered by poor appetite or overeating?</h5>
-                                        <select name="eating">
-                                            <option value="0"></option>
-                                            <option value="0">Not at all</option>
-                                            <option value="1">Several days</option>
-                                            <option value="2">More than half the days</option>
-                                            <option value="3">Nearly everyday</option>
-                                        </select>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" id="questionnaire">
+                            <h3 class="section">Social-Emotional</h3>
+                            <h5 class="card-subtitle">Over the last 2 weeks, how often have you been bothered by poor appetite or overeating?</h5>
+                                <select name="eating">
+                                    <option value="0"></option>
+                                    <option value="0">Not at all</option>
+                                    <option value="1">Several days</option>
+                                    <option value="2">More than half the days</option>
+                                    <option value="3">Nearly everyday</option>
+                                </select>
                               <br><br>
-                              <h5 class="card-subtitle">Over the last 2 weeks, how often have you felt bad about yourself or that you're a failure or let people down?</h5>
-                                    <select name="failure">
-                                        <option value="0"></option>
-                                            <option value="0">Not at all</option>
-                                            <option value="1">Several days</option>
-                                            <option value="2">More than half the days</option>
-                                            <option value="3">Nearly everyday</option>
-                                    </select>
+                            <h5 class="card-subtitle">Over the last 2 weeks, how often have you felt bad about yourself or that you're a failure or let people down?</h5>
+                                <select name="failure">
+                                    <option value="0"></option>
+                                    <option value="0">Not at all</option>
+                                    <option value="1">Several days</option>
+                                    <option value="2">More than half the days</option>
+                                    <option value="3">Nearly everyday</option>
+                                </select>
                           <br><br>
-                          <h5 class="card-subtitle">Over the last 2 weeks, how often have you had trouble concentrating on things, such as reading or watching TV?</h5>
-                                    <select name="concentrate">
-                                        <option value="0"></option>
-                                            <option value="0">Not at all</option>
-                                            <option value="1">Several days</option>
-                                            <option value="2">More than half the days</option>
-                                            <option value="3">Nearly everyday</option>
-                                    </select>
+                            <h5 class="card-subtitle">Over the last 2 weeks, how often have you had trouble concentrating on things, such as reading or watching TV?</h5>
+                                <select name="concentrate">
+                                    <option value="0"></option>
+                                    <option value="0">Not at all</option>
+                                    <option value="1">Several days</option>
+                                    <option value="2">More than half the days</option>
+                                    <option value="3">Nearly everyday</option>
+                                </select>
                           <br><br>
                           <h5 class="card-subtitle">Over the last 2 weeks, how often have you felt down, depressed or hopeless?</h5>
-                                    <select name="depression">
-                                        <option value="0"></option>
-                                            <option value="0">Not at all</option>
-                                            <option value="1">Several days</option>
-                                            <option value="2">More than half the days</option>
-                                            <option value="3">Nearly everyday</option>
-                                    </select>
+                                <select name="depression">
+                                    <option value="0"></option>
+                                    <option value="0">Not at all</option>
+                                    <option value="1">Several days</option>
+                                    <option value="2">More than half the days</option>
+                                    <option value="3">Nearly everyday</option>
+                                </select>
                           <br><br>
                           <h5 class="card-subtitle">Over the last 2 weeks, how often have you been had little interest or pleasure in doing things?</h5>
-                                    <select name="interest">
-                                        <option value="0"></option>
-                                            <option value="0">Not at all</option>
-                                            <option value="1">Several days</option>
-                                            <option value="2">More than half the days</option>
-                                            <option value="3">Nearly everyday</option>
-                                    </select>
+                                <select name="interest">
+                                    <option value="0"></option>
+                                    <option value="0">Not at all</option>
+                                    <option value="1">Several days</option>
+                                    <option value="2">More than half the days</option>
+                                    <option value="3">Nearly everyday</option>
+                                </select>
                               <br><br>
-                                </div>
-                            </div>
-                      </div>
-                    </div>
-                </form>
-        <div class="row" id="results_yes" style="display: none">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Prediction</h2>
-                        <h4 class="card-title">Our model predicts that you may have a sleeping disorder.</h4>
-                    <hr>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row" id="results_no" style="display: none">
+            </form>
+        
+            <div class="row" id="results_yes" style="display: none">
             <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Prediction</h2>
-                        <h4 class="card-title">Our model predicts that you do not have a sleeping disorder.</h4>
-                    <hr>
-                    </div>
-                </div>
+            <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Prediction</h2>
+                <h4 class="card-title">Our model predicts that you may have a sleeping disorder.</h4>
+                <hr>
             </div>
-        </div>
-                    <hr class="dash">
-                            <div class="row" >
-                                    <div class="col-lg-12">
-                                            <div class="card">
-                                            <div class="card-body" id="button">
-                                <input class="btn btn-primary btn-lg" id="btnSend" type="submit" onclick="myFunction(); selectResult()" value="Click me to enter your info!"/><br>
-                                <br>
-                                <ul id=response></ul>
-                                </div>
-                                </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-
             </div>
-          </div>
-        </div>
+            </div>
+            </div>
+       
+            <div class="row" id="results_no" style="display: none">
+            <div class="col-lg-12">
+            <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Prediction</h2>
+                <h4 class="card-title">Our model predicts that you do not have a sleeping disorder.</h4>
+                <hr>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <hr class="dash">
+            <div class="row" >
+            <div class="col-lg-12">
+            <div class="card">
+            <div class="card-body" id="button">
+                <input class="btn btn-primary btn-lg" id="btnSend" type="submit" onclick="myFunction(); selectResult()" value="Click me to enter your info!"/><br>
+                <br>
+                <ul id=response></ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
     </div>
+
     <script
-              src="https://code.jquery.com/jquery-3.3.1.min.js"
-              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-              crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script language ="JavaScript" type="text/javascript" src="static/js/submit.js"></script>
     <script>var prediction = '{{data}}' </script>
     <script>console.log(prediction)</script>
