@@ -43,10 +43,21 @@ def predict():
                 array.append(d['value'])
 
     user_dict = pd.DataFrame(user_data)
-
+    print(user_dict)
     ## USE ME! I'M THE RIGHT DATAFRAME! ##
     df = user_dict.transpose()
-
+    print(df)
+    # df = df.reset_index(drop=True, inplace=True)
+    # df = df.drop(axis=1, label=index)
+    new_header = df.iloc[0]
+    df = df[1:]
+    df.columns = new_header
+    ordered_df = df[["food_spend", "interest", "depression", 
+            "sleep_act", "energy", "eating", 
+            "failure", "concentrate", "wic", 
+            "private_ins", "medicare", "govt_ins", 
+            "sleep_hrs", "gender", "race"]]
+    print(ordered_df)
     #print(type(user_data))
     #print(user_data)
     #print(user_dict)
