@@ -7,7 +7,6 @@ import pickle
 # create instance of Flask app
 app = Flask(__name__)
 
-#model = #model from python
 
 @app.route("/data")
 def data_load():
@@ -19,15 +18,12 @@ def data_load():
 # Set route to homepage
 @app.route("/")
 def home():
-    #data = model.data()
-    return render_template("index.html") #prediction=prediction)
+    return render_template("index.html")
 
 @app.route("/submit", methods = ['GET', 'POST'])
 def submit():
     # jsondata = request.get_json()
     # data = json.loads(jsondata)
-
-    # #stuff happens here that involves data to obtain a result
 
     # result = {'escalate': True}
     # return json.dumps(result)
@@ -47,10 +43,10 @@ def predict():
                 array.append(d['value'])
 
     user_dict = pd.DataFrame(user_data)
-    
+
     ## USE ME! I'M THE RIGHT DATAFRAME! ##
     df = user_dict.transpose()
-    
+
     #print(type(user_data))
     #print(user_data)
     #print(user_dict)
@@ -67,7 +63,7 @@ def predict():
     #print(prediction[0])
     data = {"prediction": str(prediction[0])}
     #print(data)
-    
+
     return jsonify(data)
     # return render_template("index.html", data=data)
 
