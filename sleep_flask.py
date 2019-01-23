@@ -46,28 +46,28 @@ def predict():
             if key == 'value':
                 array.append(d['value'])
 
-    print(type(user_data))
-    print(user_data)
-    print(array)
+    user_dict = pd.DataFrame(user_data)
+    
+    ## USE ME! I'M THE RIGHT DATAFRAME! ##
+    df = user_dict.transpose()
+    
+    #print(type(user_data))
+    #print(user_data)
+    #print(user_dict)
+    #print(df)
+    #print(array)
     encoder.fit(array)
     new_array = encoder.transform(array)
-    print(new_array)
-    # array = map(int, array)
-    # new_array = np.array(new_array)
-    # new_array = [new_array]
+
+
     new_array = new_array.reshape(1, -1)
-    print(new_array)
+    #print(new_array)
     prediction = model.predict(new_array)
-    print(prediction)
-    print(prediction[0])
+    #print(prediction)
+    #print(prediction[0])
     data = {"prediction": str(prediction[0])}
-    print(data)
-    # res = dict()
-    # for value in user_submission.value():
-    #     res[value] =
-    # array = np.array(user_submission['value'])
-        # except ValueError:
-        #     return jsonify("Please try again.")
+    #print(data)
+    
     return jsonify(data)
     # return render_template("index.html", data=data)
 
