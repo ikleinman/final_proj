@@ -10,15 +10,25 @@ $('#btnSend').click(function(event){
       contentType: 'application/json',
       processData: true,
       success: function (response) {
-        console.log(response)
+        console.log(response)  
         $('#form').val(response)
 
-
+        //   console.log(user_submission)
   }
    });
 
 });
 
+// $('#btnSend').click(function(event){
+//     event.preventDefault()
+//     console.log("This was clicked!");
+//     var x = document.getElementById("myDIV");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// });
 
 function myFunction(){
     event.preventDefault()
@@ -40,7 +50,7 @@ function selectResult(){
             x.style.display = "none";
         }
     };
-
+    
     function myFunctionNo(){
         event.preventDefault()
         console.log(prediction);
@@ -51,10 +61,31 @@ function selectResult(){
             x.style.display = "none";
         }
     };
-
-    if (response == {"prediction":[0]}){
+    // myFunctionNo();
+    // myFunctionYes();
+    if (prediction == '0'){
         myFunctionYes();
     } else {
         myFunctionNo();
     }
-};
+}
+
+// function myFunctionYes(){
+//     event.preventDefault()
+//     var x = document.getElementById("results_yes");
+//     if (x.style.display === "none") {
+//         x.style.display = "inline";
+//     } else {
+//         x.style.display = "none";
+//     }
+// };
+
+// function myFunctionNo(){
+//     event.preventDefault()
+//     var x = document.getElementById("results_no");
+//     if (x.style.display === "none") {
+//         x.style.display = "inline";
+//     } else {
+//         x.style.display = "none";
+//     }
+// };

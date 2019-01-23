@@ -57,64 +57,28 @@ def predict():
             "failure", "concentrate", "wic", 
             "private_ins", "medicare", "govt_ins", 
             "sleep_hrs", "gender", "race"]]
-    
-
     print(ordered_df)
-    df["food_spend"]= encoder1.transform(df["food_spend"])
-    df["interest"]= encoder2.transform(df["interest"])
-    df["depression"]= encoder3.transform(df["depression"])
-    df["sleep_act"]= encoder4.transform(df["sleep_act"])
-    df["energy"]= encoder5.transform(df["energy"])
-    df["eating"]= encoder6.transform(df["eating"])
-    df["failure"]= encoder7.transform(df["failure"])
-    df["concentrate"]= encoder8.transform(df["concentrate"])
-    df["wic"]= encoder9.transform(df["wic"])
-    df["private_ins"]= encoder10.transform(df["private_ins"])
-    df["medicare"]= encoder11.transform(df["medicare"])
-    df["govt_ins"]= encoder12.transform(df["govt_ins"])
-    df["sleep_hrs"]= encoder13.transform(df["sleep_hrs"])
-    df["gender"]= encoder14.transform(df["gender"])
-    df["race"]= encoder15.transform(df["race"])
-
-    from scipy import sparse
-    df = sparse.coo_matrix(df)
-    prediction = model.predict(df)
-
     #print(type(user_data))
     #print(user_data)
     #print(user_dict)
     #print(df)
     #print(array)
-    # encoder.fit(array)
-    # new_array = encoder.transform(array)
+    encoder.fit(array)
+    new_array = encoder.transform(array)
 
 
-    # new_array = new_array.reshape(1, -1)
+    new_array = new_array.reshape(1, -1)
     #print(new_array)
-    # prediction = model.predict(new_array)
+    prediction = model.predict(new_array)
     #print(prediction)
     #print(prediction[0])
-    data = {"prediction": str(prediction)}
+    data = {"prediction": str(prediction[0])}
     #print(data)
 
     return jsonify(data)
     # return render_template("index.html", data=data)
 
 if __name__ == '__main__':
-    encoder1 = pickle.load(open('original_csv_files/leCBD130.sav', 'rb'))
-    encoder2 = pickle.load(open('original_csv_files/leDPQ010.sav', 'rb'))
-    encoder3 = pickle.load(open('original_csv_files/leDPQ020.sav', 'rb'))
-    encoder4 = pickle.load(open('original_csv_files/leDPQ030.sav', 'rb'))
-    encoder5 = pickle.load(open('original_csv_files/leDPQ040.sav', 'rb'))
-    encoder6 = pickle.load(open('original_csv_files/leDPQ050.sav', 'rb'))
-    encoder7 = pickle.load(open('original_csv_files/leDPQ060.sav', 'rb'))
-    encoder8 = pickle.load(open('original_csv_files/leDPQ070.sav', 'rb'))
-    encoder9 = pickle.load(open('original_csv_files/leFSQ162.sav', 'rb'))
-    encoder10 = pickle.load(open('original_csv_files/leHIQ031A.sav', 'rb'))
-    encoder11 = pickle.load(open('original_csv_files/leHIQ031B.sav', 'rb'))
-    encoder12 = pickle.load(open('original_csv_files/leHIQ031I.sav', 'rb'))
-    encoder13 = pickle.load(open('original_csv_files/leSLD010H.sav', 'rb'))
-    encoder14 = pickle.load(open('original_csv_files/leRIAGENDR.sav', 'rb'))
-    encoder15 = pickle.load(open('original_csv_files/leRIDRETH1.sav', 'rb'))
+    encoder = pickle.load(open('original_csv_files/Encoder.sav', 'rb'))
     model = pickle.load(open('original_csv_files/LogRegression.sav', 'rb'))
     app.run(debug=True)
