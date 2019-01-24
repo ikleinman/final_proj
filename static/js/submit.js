@@ -63,7 +63,7 @@ function selectResult(){
     };
     // myFunctionNo();
     // myFunctionYes();
-    if (prediction == '0'){
+    if (response != {prediction:[0]}){
         myFunctionYes();
     } else {
         myFunctionNo();
